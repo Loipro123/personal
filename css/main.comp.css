@@ -1,0 +1,627 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+/* ==========================================================================
+Typography
+========================================================================== */
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279; }
+
+h1 {
+  font-size: 65px;
+  color: #2d3033; }
+
+h2 {
+  font-size: 40px;
+  color: #2d3033; }
+
+h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300; }
+
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400; }
+
+h5 {
+  font-size: 14px;
+  color: #2d3033;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.btn {
+  background-color: #e84545;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  display: inline-block;
+  text-transform: uppercase; }
+  .btn:hover, .btn:focus {
+    background-color: #e52e2e;
+    color: #fff; }
+  .btn-large {
+    padding: 15px 40px; }
+
+/* ==========================================================================
+	General Styles
+========================================================================== */
+a {
+  color: #e84545; }
+
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #6c7279; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+.section {
+  padding: 100px 0; }
+
+.no-padding {
+  padding: 0; }
+
+.no-gutter [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* ==========================================================================
+	$Header
+========================================================================== */
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+  #header .header-content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 0;
+    width: 80px; }
+
+#header.fixed {
+  background-color: #292c47; }
+  #header.fixed .header-content {
+    border-bottom: 0;
+    padding: 25px 0; }
+  #header.fixed .nav-toggle {
+    top: 18px; }
+
+.navigation.open {
+  opacity: 0.9;
+  visibility: visible; }
+
+.navigation li {
+  display: inline-block; }
+
+.navigation a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 40px;
+  text-transform: uppercase; }
+  .navigation a:hover, .navigation a.active {
+    color: #fff; }
+
+.nav-toggle {
+  display: none;
+  height: 44px;
+  overflow: hidden;
+  position: fixed;
+  right: 5%;
+  text-indent: 100%;
+  top: 32px;
+  white-space: nowrap;
+  width: 44px;
+  z-index: 99999; }
+  .nav-toggle:before, .nav-toggle:after {
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .nav-toggle:before {
+    background-color: #e84545; }
+  .nav-toggle:after {
+    background-color: #e84545; }
+  .nav-toggle span {
+    background-color: #fff;
+    bottom: auto;
+    display: inline-block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    right: auto;
+    top: 50%;
+    width: 18px;
+    z-index: 10; }
+    .nav-toggle span:before, .nav-toggle span:after {
+      background-color: #fff;
+      content: "";
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%; }
+  .nav-toggle.close-nav span {
+    background-color: rgba(255, 255, 255, 0); }
+    .nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
+      background-color: #fff; }
+
+/* ==========================================================================
+	$Banner
+========================================================================== */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 750px; }
+
+.container-banner {
+  margin-left: 35%;
+  margin-top: 110px;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column; }
+
+.banner-text {
+  padding-top: 25%; }
+  .banner-text h1 {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .banner-text p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 80px; }
+
+/* ==========================================================================
+	$Features
+========================================================================== */
+.feature {
+  margin-bottom: 50px; }
+  .feature-content {
+    padding: 0 15px;
+    margin-top: 30px; }
+  .feature .icon {
+    color: #e84545;
+    font-size: 60px; }
+
+/* Header-section*/
+.header_section {
+  font-size: 35px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Indie Flower", cursive;
+  margin-bottom: 30px; }
+  .header_section .header_line {
+    height: 1px;
+    background-color: #c4aa91;
+    flex: 0 0 40%; }
+  .header_section .header_title {
+    padding: 10px;
+    color: #c4aa91; }
+
+/*About*/
+.about {
+  font-size: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about .about_box {
+    min-height: 650px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 30px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .about .about_box .image_box {
+      height: 570px;
+      width: 50%;
+      overflow: hidden;
+      border-radius: 6px; }
+    .about .about_box .infor_box {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .about .about_box .infor_box .infor_icon {
+        margin: 20px 0; }
+        .about .about_box .infor_box .infor_icon .item_icon {
+          display: flex;
+          font-size: 20px;
+          color: #1d2326;
+          align-items: center;
+          margin-bottom: 10px; }
+        .about .about_box .infor_box .infor_icon .icon_in {
+          margin-right: 25px;
+          font-size: 30px;
+          color: blue; }
+
+/* ==========================================================================
+	$Works
+========================================================================== */
+.work {
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden; }
+  .work .overlay {
+    background: rgba(232, 69, 69, 0.9);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .work .overlay-caption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%; }
+  .work h5,
+  .work p {
+    color: #fff;
+    margin: 0;
+    opacity: 0; }
+  .work h5 {
+    margin-bottom: 5px; }
+
+.work-box:hover .overlay {
+  opacity: 1; }
+  .work-box:hover .overlay h5,
+  .work-box:hover .overlay p {
+    opacity: 1; }
+
+/* ==========================================================================
+	$Teams
+========================================================================== */
+.person {
+  max-width: 270px; }
+  .person-content {
+    margin-top: 20px; }
+  .person h4 {
+    font-weight: 400; }
+  .person h5 {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+
+.social-icons, .footer .footer-share {
+  margin-top: 30px; }
+  .social-icons li, .footer .footer-share li {
+    float: left; }
+  .social-icons a, .footer .footer-share a {
+    border: 1px solid #e8ecee;
+    color: #c6cacc;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px; }
+    .social-icons a:hover, .footer .footer-share a:hover {
+      background-color: #e84545;
+      border-color: #e84545;
+      color: #fff; }
+
+/* ==========================================================================
+	$Testimonials
+========================================================================== */
+.testimonials {
+  background-color: #53354a;
+  position: relative; }
+  .testimonials blockquote {
+    border: 0;
+    margin: 0;
+    padding: 100px 15% 0; }
+  .testimonials p {
+    color: #fff;
+    font: italic 36px "Cardo", Georgia, "Times New Roman", serif; }
+  .testimonials cite {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase; }
+
+/* ==========================================================================
+	$Download
+========================================================================== */
+.download h3 {
+  margin-top: 0; }
+
+.download p {
+  color: #2d3033;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.download .btn {
+  margin-top: 30px; }
+
+/* ==========================================================================
+	$Footer
+========================================================================== */
+.footer {
+  text-align: center; }
+  .footer-top {
+    background-color: #3a3e64;
+    padding-top: 50px; }
+  .footer-bottom {
+    background-color: #313454;
+    padding: 20px 0; }
+  .footer .footer-col {
+    margin-bottom: 80px; }
+  .footer h5 {
+    color: #fff; }
+  .footer h5 {
+    margin-bottom: 20px; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #e84545; }
+  .footer .footer-share {
+    margin-top: 0; }
+    .footer .footer-share li {
+      display: inline-block;
+      float: none; }
+    .footer .footer-share a {
+      border-width: 2px;
+      color: #fff; }
+  .footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px; }
+
+/* ==========================================================================
+	$Utilities
+========================================================================== */
+.work {
+  /**/
+  /* ==========================================================================
+	Font Icon (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
+========================================================================== */ }
+  .work .animated {
+    visibility: visible; }
+  .work .icon {
+    font-family: "elegant-theme-line";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .work .icon-mobile:before {
+    content: "\e000"; }
+  .work .icon-laptop:before {
+    content: "\e001"; }
+  .work .icon-desktop:before {
+    content: "\e002"; }
+  .work .icon-tablet:before {
+    content: "\e003"; }
+  .work .icon-phone:before {
+    content: "\e004"; }
+  .work .icon-document:before {
+    content: "\e005"; }
+  .work .icon-documents:before {
+    content: "\e006"; }
+  .work .icon-search:before {
+    content: "\e007"; }
+  .work .icon-clipboard:before {
+    content: "\e008"; }
+  .work .icon-newspaper:before {
+    content: "\e009"; }
+  .work .icon-notebook:before {
+    content: "\e00a"; }
+  .work .icon-book-open:before {
+    content: "\e00b"; }
+  .work .icon-browser:before {
+    content: "\e00c"; }
+  .work .icon-calendar:before {
+    content: "\e00d"; }
+  .work .icon-presentation:before {
+    content: "\e00e"; }
+  .work .icon-picture:before {
+    content: "\e00f"; }
+  .work .icon-pictures:before {
+    content: "\e010"; }
+  .work .icon-video:before {
+    content: "\e011"; }
+  .work .icon-camera:before {
+    content: "\e012"; }
+  .work .icon-printer:before {
+    content: "\e013"; }
+  .work .icon-toolbox:before {
+    content: "\e014"; }
+  .work .icon-briefcase:before {
+    content: "\e015"; }
+  .work .icon-wallet:before {
+    content: "\e016"; }
+  .work .icon-gift:before {
+    content: "\e017"; }
+  .work .icon-bargraph:before {
+    content: "\e018"; }
+  .work .icon-grid:before {
+    content: "\e019"; }
+  .work .icon-expand:before {
+    content: "\e01a"; }
+  .work .icon-focus:before {
+    content: "\e01b"; }
+  .work .icon-edit:before {
+    content: "\e01c"; }
+  .work .icon-adjustments:before {
+    content: "\e01d"; }
+  .work .icon-ribbon:before {
+    content: "\e01e"; }
+  .work .icon-hourglass:before {
+    content: "\e01f"; }
+  .work .icon-lock:before {
+    content: "\e020"; }
+  .work .icon-megaphone:before {
+    content: "\e021"; }
+  .work .icon-shield:before {
+    content: "\e022"; }
+  .work .icon-trophy:before {
+    content: "\e023"; }
+  .work .icon-flag:before {
+    content: "\e024"; }
+  .work .icon-map:before {
+    content: "\e025"; }
+  .work .icon-puzzle:before {
+    content: "\e026"; }
+  .work .icon-basket:before {
+    content: "\e027"; }
+  .work .icon-envelope:before {
+    content: "\e028"; }
+  .work .icon-streetsign:before {
+    content: "\e029"; }
+  .work .icon-telescope:before {
+    content: "\e02a"; }
+  .work .icon-gears:before {
+    content: "\e02b"; }
+  .work .icon-key:before {
+    content: "\e02c"; }
+  .work .icon-paperclip:before {
+    content: "\e02d"; }
+  .work .icon-attachment:before {
+    content: "\e02e"; }
+  .work .icon-pricetags:before {
+    content: "\e02f"; }
+  .work .icon-lightbulb:before {
+    content: "\e030"; }
+  .work .icon-layers:before {
+    content: "\e031"; }
+  .work .icon-pencil:before {
+    content: "\e032"; }
+  .work .icon-tools:before {
+    content: "\e033"; }
+  .work .icon-tools-2:before {
+    content: "\e034"; }
+  .work .icon-scissors:before {
+    content: "\e035"; }
+  .work .icon-paintbrush:before {
+    content: "\e036"; }
+  .work .icon-magnifying-glass:before {
+    content: "\e037"; }
+  .work .icon-circle-compass:before {
+    content: "\e038"; }
+  .work .icon-linegraph:before {
+    content: "\e039"; }
+  .work .icon-mic:before {
+    content: "\e03a"; }
+  .work .icon-strategy:before {
+    content: "\e03b"; }
+  .work .icon-beaker:before {
+    content: "\e03c"; }
+  .work .icon-caution:before {
+    content: "\e03d"; }
+  .work .icon-recycle:before {
+    content: "\e03e"; }
+  .work .icon-anchor:before {
+    content: "\e03f"; }
+  .work .icon-profile-male:before {
+    content: "\e040"; }
+  .work .icon-profile-female:before {
+    content: "\e041"; }
+  .work .icon-bike:before {
+    content: "\e042"; }
+  .work .icon-wine:before {
+    content: "\e043"; }
+  .work .icon-hotairballoon:before {
+    content: "\e044"; }
+  .work .icon-globe:before {
+    content: "\e045"; }
+  .work .icon-genius:before {
+    content: "\e046"; }
+  .work .icon-map-pin:before {
+    content: "\e047"; }
+  .work .icon-dial:before {
+    content: "\e048"; }
+  .work .icon-chat:before {
+    content: "\e049"; }
+  .work .icon-heart:before {
+    content: "\e04a"; }
+  .work .icon-cloud:before {
+    content: "\e04b"; }
+  .work .icon-upload:before {
+    content: "\e04c"; }
+  .work .icon-download:before {
+    content: "\e04d"; }
+  .work .icon-target:before {
+    content: "\e04e"; }
+  .work .icon-hazardous:before {
+    content: "\e04f"; }
+  .work .icon-piechart:before {
+    content: "\e050"; }
+  .work .icon-speedometer:before {
+    content: "\e051"; }
+  .work .icon-global:before {
+    content: "\e052"; }
+  .work .icon-compass:before {
+    content: "\e053"; }
+  .work .icon-lifesaver:before {
+    content: "\e054"; }
+  .work .icon-clock:before {
+    content: "\e055"; }
+  .work .icon-aperture:before {
+    content: "\e056"; }
+  .work .icon-quote:before {
+    content: "\e057"; }
+  .work .icon-scope:before {
+    content: "\e058"; }
+  .work .icon-alarmclock:before {
+    content: "\e059"; }
+  .work .icon-refresh:before {
+    content: "\e05a"; }
+  .work .icon-happy:before {
+    content: "\e05b"; }
+  .work .icon-sad:before {
+    content: "\e05c"; }
+  .work .icon-facebook:before {
+    content: "\e05d"; }
+  .work .icon-twitter:before {
+    content: "\e05e"; }
+  .work .icon-googleplus:before {
+    content: "\e05f"; }
+  .work .icon-rss:before {
+    content: "\e060"; }
+  .work .icon-tumblr:before {
+    content: "\e061"; }
+  .work .icon-linkedin:before {
+    content: "\e062"; }
+  .work .icon-dribbble:before {
+    content: "\e063"; }
