@@ -3,6 +3,22 @@
 /* ==========================================================================
 Typography
 ========================================================================== */
+body,
+html {
+  overflow-x: hidden !important;
+}
+.container-banner_header {
+  font-size: 40px;
+  color: rgb(251, 175, 149);
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  padding: 5px 10px;
+}
+@media only screen and (max-width: 1000px) {
+  .container-banner_header {
+    display: none;
+  }
+}
 p {
   font-size: 14px;
   line-height: 22.4px;
@@ -322,17 +338,59 @@ ul li {
   background-repeat: repeat;
   min-height: 750px;
   width: 100vw;
+  position: relative;
 }
 .container-banner {
-  margin-left: 35%;
-  margin-top: 110px;
-  width: 50%;
-  height: 300px;
+  margin-left: 37%;
+  margin-top: 253px;
+  width: 37%;
+  height: 380px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* background-color: #2d3033; */
+}
+@media only screen and (max-width: 1250px) {
+  .container-banner {
+    width: 50%;
+    margin-left: 32%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .banner-button1 {
+  }
+  .banner-button2 {
+  }
 }
 .banner-text {
   padding-top: 25%;
+}
+.banner-button1 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  width: 80px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: rgb(251, 175, 149);
+  border: 1px solid rgb(251, 175, 149);
+  border-radius: 5px;
+  color: white;
+}
+.banner-button2 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  width: 80px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(251, 175, 149);
+  border-radius: 5px;
+  color: rgb(251, 175, 149);
 }
 .banner-text h1 {
   color: #fff;
